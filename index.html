@@ -106,7 +106,14 @@
   .light{background:var(--pearl);color:var(--ink);color-scheme:light}
   .call .lead{font-family:var(--display);font-size:clamp(1.6rem,7vw,2.1rem);line-height:1.2;color:var(--ink)}
   .call ol{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0}
-  .call li{padding-block:16px;border-top:1px solid rgba(27,26,36,.14);font-size:1.15rem}
+  .call li{border-top:1px solid rgba(27,26,36,.14);font-size:1.15rem}
+  .call li a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px;color:inherit;text-decoration:none}
+  .call li a span{text-decoration:underline;text-decoration-color:rgba(139,106,43,.45);text-decoration-thickness:1px;text-underline-offset:5px}
+  .call li a .ext{flex:none;width:18px;height:18px;fill:none;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s ease}
+  .call li a:hover span,.call li a:focus-visible span{text-decoration-color:var(--gold-deep)}
+  .call li a:hover .ext{transform:translate(2px,-2px)}
+  .call li a:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
+  .call .hint{margin-top:18px;font-size:.92rem;font-style:italic;color:var(--ink-soft)}
   .call li:last-child{border-bottom:1px solid rgba(27,26,36,.14);color:var(--gold-deep);font-style:italic}
 
   .closing{text-align:center;background:linear-gradient(var(--pearl),var(--pearl2));padding-top:40px}
@@ -246,11 +253,12 @@
     <div class="wrap">
       <p class="lead rv" data-i18n="callLead">This Fatimiyya, don’t just hear her name.</p>
       <ol>
-        <li class="rv" data-i18n="c1">Discover her personality.</li>
-        <li class="rv" data-i18n="c2">Study her life.</li>
-        <li class="rv" data-i18n="c3">Understand her message.</li>
-        <li class="rv" data-i18n="c4">And let her legacy live through you.</li>
+        <li class="rv"><a href="https://al-islam.org/fatimah-al-zahra-spring-inspiration-saleem-bhimji/session-6-ideal-woman" target="_blank" rel="noopener"><span data-i18n="c1">Discover her personality.</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></li>
+        <li class="rv"><a href="https://al-islam.org/life-fatimah-az-zahra-principal-all-women-study-and-analysis-baqir-sharif-al-qurashi" target="_blank" rel="noopener"><span data-i18n="c2">Study her life.</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></li>
+        <li class="rv"><a href="https://al-islam.org/fatimah-al-zahra-spring-inspiration-saleem-bhimji/session-7-defense-imamate" target="_blank" rel="noopener"><span data-i18n="c3">Understand her message.</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></li>
+        <li class="rv"><a href="https://al-islam.org/fatimah-al-zahra-spring-inspiration-saleem-bhimji/session-10-fatimiyyah-ashura" target="_blank" rel="noopener"><span data-i18n="c4">And let her legacy live through you.</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></li>
       </ol>
+      <p class="hint rv" data-i18n="hint">Click on the text for more information.</p>
     </div>
   </section>
 
@@ -326,6 +334,7 @@
     c2:"Soma maisha yake.",
     c3:"Elewa ujumbe wake.",
     c4:"Na acha urithi wake uishi kupitia wewe.",
+    hint:"Bofya maandishi kwa maelezo zaidi.",
     m1:"Mfahamu.", m2:"Jifunze kutoka kwake.", m3:"Ishi maadili yake.",
     shareWa:"Shiriki kwenye WhatsApp", copy:"Nakili kiungo", copied:"Kiungo kimenakiliwa",
     refs:"Marejeo"
@@ -369,6 +378,7 @@
     c2:"એમની ઝિંદગીનો અભ્યાસ કરો.",
     c3:"એમનો પૈગામ સમજો.",
     c4:"અને એમનો વારસો તમારા થકી જીવંત રાખો.",
+    hint:"વધુ માહિતી માટે લખાણ પર ક્લિક કરો.",
     m1:"એમને ઓળખો.", m2:"એમનાથી શીખો.", m3:"એમના ઉસૂલો જીવો.",
     shareWa:"WhatsApp પર શેર કરો", copy:"લિંક કૉપી કરો", copied:"લિંક કૉપી થઈ ગઈ",
     refs:"હવાલા"
